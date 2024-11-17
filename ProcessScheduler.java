@@ -7,6 +7,7 @@
    Carnet:24001878
 **/
 import scheduler.*;
+import java.util.Scanner;
 public class ProcessScheduler{
     //// clase para iniciar los procesos unicamente//////
         /////////////////////////////////////////
@@ -23,7 +24,7 @@ public class ProcessScheduler{
                 String ingreso ="";
                 while (true){
                     ingreso = scanner.nextLine();
-                    if (input.equalsIgnoreCase("q") || input.isEmpty()){
+                    if (ingreso.equalsIgnoreCase("q")){
                         System.out.println("Saliendo...");
                         System.exit(0);
                     }
